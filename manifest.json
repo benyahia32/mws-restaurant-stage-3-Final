@@ -1,0 +1,21 @@
+{
+  "short_name": "RR",
+  "name": "Restaurant Reviews",
+  "icons": [
+    {
+      "src": "/images/rr_icon-196.jpg",
+      "type": "image/jpg",
+      "sizes": "196x196"
+    },
+    {
+      "src": "/images/rr_icon-512.jpg",
+      "type": "image/jpg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html",
+  "background_color": "#fdfdfd",
+  "display": "standalone",
+  "description": "Udacity MWS Nanodegree Restaurant Project Stage 3",
+  "theme_color": "#252831"
+}
