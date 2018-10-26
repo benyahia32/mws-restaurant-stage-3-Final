@@ -187,15 +187,15 @@ createReviewHTML = (review) => {
 
   if (review.createdAt) {
     const date = document.createElement('p');
-    date.innerHTML = `Posted: ${new Date(review.createdAt)}`;
+    date.innerHTML = `Posted: ${new Date(review.createdAt).toDateString()}`;
     date.classList.add('review-date');
     li.appendChild(date);
   }
 //Update the date
   // Last update
   if (review.updatedAt && review.updatedAt !== review.createdAt) {
-    const updatedDate = document.createElement('p');
-    updatedDate.innerHTML = `Updated: ${new Date(review.updatedAt)}`;
+    const updatedDate = document.createElement('p');    
+    date.innerHTML = `Posted: ${new Date(review.createdAt).toDateString()}`;
     date.classList.add('review-date');
     li.appendChild(date);
   }
@@ -350,30 +350,3 @@ hideLoader = () => {
   }
   return false;
 }
-/**
- * Register the service worker.
- */
-/*registerServiceWorker = () => {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
-        console.log('Success registration worked!', registration.scope);
-      }).catch(function(error) {
-        console.log('Error registration failed!', error);
-      })
-    })
-  } else {
-    console.log('Sorry service worker not supported!');
-  }
-}
-registerServiceWorker();
-
-window.onload = () => {
-  fetchRestaurantFromURL((error, restaurant) => {
-    if (error) { 
-      console.error(error);
-    } else {
-      DBHelper.mapMarkerForRestaurant(self.restaurant, self.map);
-    }
-  });
-}*/

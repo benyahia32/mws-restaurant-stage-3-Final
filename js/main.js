@@ -5,10 +5,10 @@ var newMap
 var markers = []
 
 
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     if (navigator.serviceWorker) {
-      navigator.serviceWorker.register('/sw.js', {
+      navigator.serviceWorker.register('./sw.js', {
         scope: '/'
       }).then( registration => {
          console.log('Service worker registeration successful');         
@@ -17,7 +17,7 @@ if ('serviceWorker' in navigator) {
       })
     }
   })
-}
+}*/
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
